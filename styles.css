@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  background-color: #0c0c0c;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#page-1 h1,
+#page-2 h1 {
+  width: max-content;
+  margin: auto;
+}
+
+#open-sidebar-container {
+  position: fixed;
+  top: 0;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#open-sidebar-container img {
+  width: 30px;
+  height: 30px;
+}
+
+#sidebar-container {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #0c0c0c;
+  transform: translateX(-100%);
+  transition-duration: 250ms;
+  z-index: 2000;
+}
+
+.sidebar-top-stuff {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+.sidebar-top-stuff h1 {
+  margin: 0;
+  margin-left: 10px !important;
+}
+
+#close-sidebar-container img {
+  width: 30px;
+  height: 30px;
+}
+
+#close-sidebar-container {
+  background-color: #0c0c0c;
+  margin-left: auto;
+  padding: 4px;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+#close-sidebar-container:hover {
+  background-color: #111111;
+}
+
+.sidebar-page-btn {
+  transition-duration: 250ms;
+  cursor: pointer;
+}
+
+.sidebar-page-btn h1 {
+  margin: 0;
+  margin-left: 10px !important;
+}
+
+.sidebar-page-btn:hover {
+  background-color: #111111;
+}
+
+#overlay {
+  background-color: #00000020;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
